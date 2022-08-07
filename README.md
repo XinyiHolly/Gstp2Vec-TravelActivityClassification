@@ -1,6 +1,6 @@
 # Graph-based Representation for Identifying Individual Travel Activities with Spatiotemporal Trajectories and POI Data
 
-This repository provides the data preprocessing and implementation for the following paper:
+This repository provides the implementation of the following paper:
 > Graph-based Representation for Identifying Individual Travel Activities with Spatiotemporal Trajectories and POI Data <br>
 > [Xinyi Liu](https://github.com/XinyiHolly) (Data Science, Zoox. Inc.), [Meiliu Wu](mwu233@wisc.edu) (Spatial Computing and Data Mining Lab, UW-Madison),<br>
 > [Bo Peng](https://github.com/ibopeng) (Ping An Labs, PAII), and [Qunying Huang](qhuang46@wisc.edu)* (Spatial Computing and Data Mining Lab, UW-Madison) 
