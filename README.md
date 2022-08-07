@@ -1,4 +1,4 @@
-# Graph-based Representation for Identifying Individual Travel Activities with Spatiotemporal Trajectories and POI Data
+## Graph-based Representation for Identifying Individual Travel Activities with Spatiotemporal Trajectories and POI Data
 
 This repository provides the implementation of the following paper:
 > Graph-based Representation for Identifying Individual Travel Activities with Spatiotemporal Trajectories and POI Data <br>
@@ -29,3 +29,29 @@ activities (e.g., Dwelling and Work) for people with diverse travel patterns out
 <p align="center">
   <img src="assets/main.png" />
 </p>
+
+## Implementation
+### Installation
+Clone this repository.
+```
+git clone https://github.com/XinyiHolly/Gstp2Vec-TravelActivityClassification.git
+cd Gstp2Vec-TravelActivityClassification
+pip install -r requirements.txt
+```
+### Datasets
+We used two datasets in our paper:
+1. [OSM landuse and POI datasets](http://download.geofabrik.de/north-america/us.html)
+2. GPS trajectory data (available from the corresponding author on a reasonable request)
+
+### How to Run
+1. processing.py generates: 
+   - activityzone.csv, which contains activity zones with their spatiotemporal and POI properties
+   - graph.csv, which contains graph edges with their origin and destination nodes
+2. Gstp2VecDemo.ipynb demostrates:
+   - generation of input representations (i.e., t, s, p)
+   - creation of graph-based representation model based on weighted bi-directional GraphSAGE
+   - supervised learning:
+     - build and run the representation learning model under a two-split setup (i.e., training-test split)
+     - build and run the representation learning model under a three-split setup (i.e., training-validation-test split)
+   - semi-supervised learning:
+     - build and run the representation learning model under a three-split setup (i.e., training-validation-test split)
